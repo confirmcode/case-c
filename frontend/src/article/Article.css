@@ -1,0 +1,91 @@
+.article-list {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: flex-start;
+}
+
+.article-list .article-card {
+    flex: 0 0 450px;
+    height: 100px;
+    padding: 10px;
+    /* border: 1px solid #555; */
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 15px 0;
+    background: #eee;
+/* 
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around; */
+}
+@media (max-width: 1024px) {
+    .article-list .article-card {
+        flex: 1 1 300px;
+        margin: 10px 20px;
+    }
+  }
+
+.datetime {
+    text-align: right;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.aticle-tags {
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-block;
+    font-style: italic;
+    height: 2em;
+    overflow: hidden;
+}
+
+a.prolog {
+    color: #000;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.article-item {
+    padding: 20px 40px;
+    background: #fff;
+}
+
+.article-item .datetime {
+    font-size: 12px;
+}
+
+img {
+    max-width: 600px;
+    max-height: 300px;
+}
+.article-item a.readmore {
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    background: #aaa;
+}
+
+a.readmore:hover {
+    background: #777;
+}
+
+.d-flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-space-between {
+    justify-content: space-between;
+}
